@@ -1,0 +1,310 @@
+/* General styles for the entire page */
+body{
+    margin: none;
+    padding: none;
+    background-color: #464647;
+    font-family: Nirmala UI;
+    box-sizing: border-box;
+    color:#fff;
+    font-size: medium;
+    padding: none;
+}
+
+/* Styles for the main container of the page */
+.Alpha-container{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    background-image: url(showcase.jpeg);
+    background-position-x: center;
+    background-position-y:center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+/* Styles for the navigation bar */
+nav{
+    margin-top: 0px;
+    display: grid;
+    background-color: #858585;
+    color:#E2E2E3;
+    width: 100%;
+}
+
+/* Styling for the image section */
+nav > img{
+   width: 100%;
+}
+
+/* Setting up the position in nav */
+.nav-name{
+    margin-left: 5em;
+}
+
+/* Styles for the nav list */
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+/* Styles for the navigation links */
+.nav-list>li>a{
+    color:#fff;
+    text-decoration: none;
+    margin-left: 15px;
+    text-shadow: 1px 1px 5px #fff;
+    justify-content: center;
+    
+}
+/* Styles for list items in the navigation */
+.nav-list>li{
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover styles for list items in the navigation */
+.nav-list>li:hover{
+    background-color: #858585;
+    color: #ffffff;
+    /* Scale effect on hover */
+    transform: scale(1.2); 
+}
+
+/* Styles for the inside container of Alpha */
+.InsideAlpha-container{
+   margin-top: 20%;
+   margin-left: 10%;
+}
+
+/* Styles for the lead paragraph */
+.lead{
+    width:50%;
+}
+
+/* Styles for the heading */
+.InsideAlpha-container > h1{
+    font-size: 320%;
+    padding:1rem;
+}
+
+/* Styles for various elements in the Bravo container */
+.Bravo-container{
+    font-weight: 600;
+}
+.Bravo-container>h1{
+    text-align: center;
+    font-size: 320%;
+}
+.Bravo-container>h2{
+    text-align:center;
+    font-size: 220%;
+}
+.Bravo-container>p{
+    margin-left:1%;
+    font-size: 120%;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Styles for the button in Bravo container */
+.Bravo-container>button{
+    margin-left:45%;
+    height: 55px;
+    width: 150px;
+    background-color: rgb(203, 6, 6);
+    border: none;
+    font-size: medium;
+    color: #fff;
+    font-weight: 400;
+}
+.Bravo-container>h4{
+    text-align: center;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+/* Making Bravo section screen responsive during minimising the screen */
+@media screen and (max-width:712px) {
+    .Bravo-container>img{
+        height: 350px;
+        width: 450px;
+        justify-content: center;
+    }
+    .Bravo-container>h4{
+        text-align: center;
+    }
+    .Bravo-container>button{
+        justify-content: center;
+    }
+    
+}
+.mock-div{
+    background-color: #F4F5F5; 
+}
+
+/* Styles for various elements in the Charlie container */
+.Charlie-container{
+    background-color: #F4F5F5;
+    color: #000;
+}
+.Charlie-container>h2{
+    margin-left: 25%;
+    font-family: Nirmala UI;
+}
+.Charlie-container>h4{
+    margin-left: 3%;
+    margin-right:2%;
+    text-align: center;
+    font-family: Nirmala UI;
+    font-size: 150%;
+    font-weight: 400;
+}
+.Charlie-container button{
+  background-color: blue;
+  height: 55px;
+  width: 150px;
+  border: none;
+  font-size: medium;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Responsive styles for Charlie container */
+@media screen and (max-width:712px) {
+    .Charlie-container img{
+      width: 450px;
+      height: 450px;
+      justify-content: center;
+    }
+}
+
+/* Styles for the Delta container */
+.Delta-container{
+    height: auto;
+    width: 100%;
+    background-image: url(section-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:10%;
+    }
+.Delta-container>h1{
+    font-size: xx-large;
+    margin-left: 23%;
+}
+.Delta-container>p{
+    text-orientation: upright;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    padding: 10% 2%;
+}
+
+/* Styles for the Zero-Echo-container */
+.Zero-Echo-container{
+    display: flex;
+    flex-direction: row;
+}
+.Zero-Echo-container>div{
+    text-align: center;
+    margin: 5%;
+    font-size: larger;
+}
+.Zero-Echo-container>img{
+    margin: 5%;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 10px;
+}
+
+/* Responsive styles for Zero Echo container */
+@media screen and (max-width:712px) {
+    .Zero-Echo-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Zero-Echo-container>img{
+        align-items: center;
+        height: 300px;
+        width: 400px;
+        justify-content: center;
+    }
+    .Zero-Echo-container>h4{
+        text-align: center;
+    }    
+}
+/* Styles for the Echo container */
+.Echo-container{
+    display: flex;
+    flex-direction: row;
+    background-color:#fff;
+    color:#000;
+}
+
+/* Styles for the right section in Echo container */
+.Echo-right> h1{
+    padding: 2rem;
+    color:#403a3a;
+}
+.Echo-right> p{
+    padding: none;
+    color:#403a3a;
+    font-size: larger;
+}.Echo-right> a{
+    padding: 1rem;
+    color:#4073f6;
+    text-decoration: none;
+}
+
+/* Responsive styles for Echo container */
+@media screen and (max-width:712px) {
+    .Echo-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Echo-left>img{
+        align-items: center;
+        height: 300px;
+        width: 400px;
+        justify-content: center;
+    }
+    .Echo-right>h2, p{
+        text-align: center;
+    }
+    .Echo-right>a{
+        text-align: center;
+    }     
+}
+/* Styles for the footer container */
+
+/* Styles for the Fox container */
+.Fox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.Fox-container>ul{
+    list-style-type: none;
+    color: white;
+    font-size: x-large;
+}
+.Fox-container>ul>li> a{
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+    font-size: medium;
+}
+
+/* Responsive styles for Fox container */
+@media screen and (max-width:712px) {
+    .Fox-container{
+        display: flex;
+        flex-direction: column;
+    }  
+
+}
+
+/* Styles for the Golf container */
+.Golf-container{
+    text-align: center;
+    background-color: #888888;
+}
